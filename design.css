@@ -1,0 +1,22 @@
+#personal-messages {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #2a2a3f;
+    border: 1px solid #ff007f;
+}
+
+#special-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3a3a4f;
+    border: 1px solid #ff007f;
+}
+
+#friend-messages {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4a4a5f;
+    border: 1px solid #ff007f;
+}

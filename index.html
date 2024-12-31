@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year, Abby!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1e1e2f;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 3rem;
+            animation: fadeIn 2s ease;
+        }
+        .button-container {
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        button {
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff007f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff4081;
+            transform: scale(1.1);
+        }
+        .image-container {
+            margin-top: 20px;
+            animation: slideIn 1s ease;
+        }
+        .hidden {
+            display: none;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            padding: 0 10px;
+            animation: fadeIn 1.5s ease;
+        }
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #12122c;
+            color: #ff007f;
+            font-size: 1rem;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 2s ease;
+        }
+        .footer a {
+            color: #ff4081;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .messages-container {
+            max-height: 150px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: #1e1e2f;
+            border: 1px solid #ff007f;
+            margin-top: 10px;
+            text-align: left;
+            font-size: 0.9rem;
+            color: white;
+        }
+        .messages-container p {
+            margin: 5px 0;
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 4rem;
+            }
+            button {
+                font-size: 1.2rem;
+                padding: 20px 30px;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+            .footer {
+                font-size: 1.2rem;
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy New Year, Abbyyyy!</h1>
+    <p>Click the buttons below to reveal pictures!</p>
+    <p>Made By Harry (Coded this website for 46 Hours In Total!)</p>
+
+    <div class="button-container">
+        <button onclick="showSurprise(1)">Progress!</button>
+        <button onclick="showSurprise(2)">Progress 2!</button>
+        <button onclick="showSurprise(3)">Harry Giving You Love!</button>
+    </div>
+
+    <div class="image-container">
+        <img id="image" class="hidden" src="" alt="Surprise Image">
+        <p id="message" class="hidden"></p>
+    </div>
+
+    <div class="footer">
+        <p>
+            Made with ❤️ to brighten your New Year, Abby! Make sure that you're not celebrating New Year alone.
+        </p>
+        <!-- Personal Messages -->
+        <div class="messages-container" id="personal-messages">
+            <p>Message 1: Happy New Year, Abby!!!!!!!</p>
+            <p>Message 2: Abby, don't forget that I will always love you, sis!! This year would have been depressing for me but thanks to you it was very amazing! looking forward next year!(2025)</p>
+            <p>Message 3: Sis, thank you for being my number 1 BFF!!!!!</p>
+            <p>Message 4: I couldn't sleep but overthink when we were going to aeon for movies you were holding my bag from behind and then I was like "let go of your hand" you probably thought of that so i couldn't sleep well the reason was that i was like "Wtf abby's hands will get cold so i said to u "abby put ur hands on ur pockets it might get cold" qwechqweuos</p>
+            <p>Message 5:  Brooo nung kitayama nga ginagalaw ko ung table tapos write and move ur pencil so u get mad HAHAHA then instead na mag write back ka sa papel ko, tinapon mo HAHHAHA.</p>
+            <p>Message 6: SISSS Bat di mo dinivide yun, ung sa math mo sa kitayama HAHAHA ma divide pa unn ihh yakubun(約分 - Simplification)</p>
+            <p>Message 7: I hope that we can play badminton again next time abby!!! at sna di mo nman e punta sa heaven ung shuttlecocks HAHAHAHA</p>
+            <p>Message 8: It's New Year! That means your birthday is near!!!I'll make sure that you can put make up on me cuz you said last time "sa bday ko na" HAHHAHA</p>
+            <p>Message 9: Don't get depressed with *Him* Alright sis? remember if you wanna open up just talk to me! and please talk to me about it when u wanna open up cuz yes i can comfort you online or irl</p>
+        </div>
+    
+        <!-- Special Message -->
+        <div class="messages-container" id="special-message">
+            <p>Special Message: Dear abby, we have known eachother since 2023, time flies so fast right? Before we even met my life was depressing only focusing on studies and didn't have much time on having fun with friends its because i never had true friends from the start, but when I met you, you were like a sister/brother/mother anything i could think of, well one word to describe you is that you are my first *True Friend*! And It was my first time having a crush as well HAHAHA even today you are still the one I admire but anyways I just hope that you won't forget your friends, families, etc.! </p>
+        </div>
+    
+        <!-- Friend Messages -->
+        <div class="messages-container" id="friend-messages">
+            <p>Messages from your friends!</p>
+            <p>Sakuya: Happy New Year!!🥳 🥳
+                I hope you'll do well next year too!! (sent with new years effect)</p>
+            <p>Erich: Happy New year 🥳🎄Sana magkatuloyan kayo ng crush mo heheh</p>
+            <p>Lyka: HAPPY NEW YEAR ！！🎎🎍            </p>
+            <p>Hanna: Happy new year Abby!!
+                Sobrang dami naten nashare na memories in 2024 and it was very fun🤩 looking forward this 2025 to have more memories kasama sila, tayong groupp! Have a great new yearr te love ya so muchhh</p>
+            <p>Akira: HARRY NEW YEARR ABBYYY 🥳👍👍</p>
+        </div>
+
+        <!-- Only Me -->
+         <div class="messages-container" id="mine-message">
+            <p>Abby, I will be very busy from now on I can't have fun anymore because I have plenty of meetings to attend to and also study for the upcoming Koukou Entrance Exam, but I'll make sure to have time to enjoy chatting/playing with you guys.</p>
+         </div>
+         
+         <!-- Only Me Part 2 -->
+          <div class="messages-container" id="Real Talk">
+            <p>Abby, HAHAHA if ever you wanna ask me about something like ‘bat mo sinabi un,’ no worries! cuz I’d be happy to explain. Like, if someone asked me a question, I’d usually answer honestly its like my habit(personal rule) qweicqwec  For example, if they asked, ‘Ikaw nag-libre? I heard ikaw nagbayad lahat, XX円,’ I’d probably say, ‘Oh yeah, I did! And then blah blah blah.’
+
+                But really, it’s all good! I wouldn’t be upset or anything. sacdqwecq So don’t hesitate to ask me about stuff, okay? Hehe and trust me ur titas or mama wont get mad."</p>
+          </div>
+
+        <!-- Only Me Part 3 -->
+         <div class="messages-container" id="2 Gatsu">
+            <p>In 2月 I'm probably not gonna be allowed to go out anymore T_T</p>
+         </div>
+
+        <!-- Last Message -->
+         <div class="messages-container" id="Last Message">
+            <p>Last Message! HAPPY NEW YEARRRR ULITTT ABBBYYY MAKE SURE YOU ENJOYYY YOUR NEW YEAR ALRIGHT!!!!!!!! REMEMBER WE LOVE YOUU!!! AND NEXT YEAR I'LL MAKE SURE NA KAKAIN TAU NG Samgyupsal HAHAHAHAHA</p>
+         </div>
+    </div>
+    
+    <script>
+        function showSurprise(num) {
+            const image = document.getElementById('image');
+            const message = document.getElementById('message');
+
+            if (num === 1) {
+                image.src = 'Progress.jpg'; // Replace with actual image path
+                message.textContent = 'Hi Abby!!!! ';
+            } else if (num === 2) {
+                image.src = 'Progress1.jpg'; // Replace with actual image path
+                message.textContent = 'There are over 200 lines of code here! There were many bugs, and fixing them was challenging, but I managed to resolve all of them. It took me plenty of hours, but it was definitely worth it!';
+            } else if (num === 3) {
+                image.src = 'Harry_Love.jpg'; // Replace with actual image path
+                message.textContent = 'Eto oh old pic ko HAHAHAHA';
+            }
+
+            image.classList.remove('hidden');
+            message.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
